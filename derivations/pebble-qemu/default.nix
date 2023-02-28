@@ -56,7 +56,7 @@ in stdenv.mkDerivation rec {
   '';
 
   meta = with lib; {
-    homepage = "https://github.com/pebble/qemu";
+    homepage = "https://github.com/ciutadellla/qemu.git";
     description = "Fork of QEMU with support for Pebble devices";
     license = licenses.gpl2Plus;
   };
