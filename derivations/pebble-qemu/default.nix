@@ -24,7 +24,7 @@ in stdenv.mkDerivation rec {
     sha256 = "1r7692hhd70nrbscznc33vi3ndv51sdlg9vc0ay4h4s1xrqv5d0g";
     fetchSubmodules = true;
   }).overrideAttrs (attrs: {
-    postHook = ''
+    post-build-hook = ''
       # pebble/qemu references a git://github.com URL, which won't work as of 2022.
       export HOME=$PWD
       git config --global url.https://github.com/.insteadOf git://github.com/
